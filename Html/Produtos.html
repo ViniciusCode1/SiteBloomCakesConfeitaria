@@ -5,36 +5,83 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bloom Cake's | Confeitaria</title>
-  <link rel="icone (Logo pequena)" href="#.png" />
+  <link
+      rel="shortcut icon"
+      href="/img/Bloom Cake's.jpg"
+      type="image/x-icon"
+    />
+  <link rel="stylesheet" href="/css/style_header.css" />
+  <link rel="stylesheet" href="/css/style_footer.css" />
+  <link rel="stylesheet" href="/css/style_body.css" />
 </head>
 
 <body>
   <!--Cabeçalho Navegação-->
   <header>
-    <figure class="banner_site">
-      <a href="index.html" alt="Banner"><img src="/img/Exemplo.png" alt="Banner" /></a>
+    <section class="top-header">
+    <div class="interface">
+    <figure class="logotipo">
+      <a href="index.html">
+        <img
+          src="/img/Bloom Cake's.jpg"
+          alt=" logo da confeitaria"
+        />
+      </a>
     </figure>
-  </header>
-  <nav>
-    <ul class="navegacao_horizontal">
-      <li><a href="index.html" alt="Tela Inicial">Início</a></li>
-      <li><a href="Sobre.html" alt="Sobre">Sobre Nós</a></li>
-      <li>
-        <a href="Produtos.html" alt="Produtos"> Catálogo de Produtos</a>
-      </li>
-      <li>
-        <a href="Encomendas.html" alt="Encomende seu pedido"> Encomendas </a>
-      </li>
-      <li>
-        <a href="Personalize.html" alt="Escolha suas preferencias no bolo">
-          Personalize seu bolo
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <!---->
-  <!---->
-  <!---->
+    <div class="btn-social">
+      <a href="https://www.instagram.com/bloom_.cakes?igsh=MXZzdG1xY
+      TIza2V2Mw=="
+        target="_blank"><button><img src="/img/instagram.svg" /></button
+      ></a>
+      <a href="https://wa.me/5511978796633/?text=Olá vim para conhecer a marca!"
+      target="_blank"><button><img src="/img/whatsapp.svg
+        " /></a
+          ></button
+      ></a>
+      <a href="https://www.ifood.com.br/delivery/sao-bernardo-do-campo
+      sp/bloom-cakes---bolos-e-doces-pauliceia/e0e07ce0-2cce-4
+       a05-8ae4-beb7557c0544?UTM_Medium=share"
+       target="_blank"><button><img src="/img/ifood-svgrepo-com.svg" /></button
+      ></a>
+    </div>
+    </div>
+  </section>
+  <section class="bottom-header">
+    <div class="interface">
+      <nav>
+        <ul>
+          <li><a href="index.html" alt="Tela Inicial">Início</a></li>
+          <li><a href="Sobre.html" alt="Sobre a loja">Sobre Nós</a></li>
+          <li class="menu-produtos" alt="Produtos">
+            <a href="Produtos.html"
+              >Catálogo<i class="bi bi-arrow-down-short"></i
+            ></a>
+            <div class="drop">
+              <a href="#">BOLOS</a>
+              <a href="#">CONES</a>
+              <a href="#">TRUFAS</a>
+              <a href="#">EMPADAS</a>
+              <a href="#">MOUSSES</a>
+            </div>
+          </li>
+          <li>
+            <a href="Encomendas.html" alt="Encomende seu pedido">Encomendas</a>
+          </li>
+          <li>
+            <a
+              href="Personalize.html"
+              alt="Escolha suas preferencias no bolo"
+            >Personalize seu bolo</a></li>
+            <li><a
+              href="Atend-cliente.html"
+              alt="Serviço de Atendimento ao Cliente"
+            >SAC</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+</header>
   <!--Conteúdo principal-->
   <main>
     <!--produtos em lista de estoque-->
@@ -296,7 +343,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, sapiente! Labo
         </li>
       </ol>
     </section>
-  </main>
+  
     <!---->
     <!---->
     <!---->
@@ -306,24 +353,25 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, sapiente! Labo
           href="https://wa.me/5511978796633/?text=Olá vim para conhecer a marca!"
           target="_blank"
           alt="Whatsapp"
-          ><img src="icone_WhatsApp.png" /></a
-        ><br />
+          ><img src="/img/whatsapp_app.png"/></a
+        >
         <a
           href="https://www.ifood.com.br/delivery/sao-bernardo-do-campo
     sp/bloom-cakes---bolos-e-doces-pauliceia/e0e07ce0-2cce-4
      a05-8ae4-beb7557c0544?UTM_Medium=share "
           target="_blank"
           alt="Instagram"
-          ><img src="Instagram.png" /></a
-        ><br />
+          ><img src="/img/ifood.png"/></a
+        >
         <a
           href="https://www.instagram.com/bloom_.cakes?igsh=MXZzdG1xY
     TIza2V2Mw=="
           target="_blank"
           alt="Ifood"
-          ><img src="Ifood.png" /></a
-        ><br />
-      </div></br>
+          ><img src="/img/instagram_app.png"/></a
+        >
+      </div>
+    </main>
   <!---->
   <!---->
   <!---->
@@ -336,16 +384,22 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, sapiente! Labo
   <!---->
    <!-- Rodapé com Informações de contato e agradecimentos-->
    <footer class="rodape_container">
-    <p class="texto_rodape">
+    <p class="rodape_texto">
       Bloom Cake's Confeitaria<br />
-      - Contatos -<br />
-      Whatsapp: 12 3456-7890 <br />
-      Facebook:<a href="#">Bloom Cake's</a> <br />
-      Ifood: <a href="#">Bloom Cake's</a> <br /><br />
 
-      - Endereço - <br />
-      Rua ABC nº 123, Bairro ABC, ABC (<!--Código do Estado -->00)<br /></p>
+      <div class="contato">
+           Contatos: <br />
+           <br>
+  
+          <a href="https://wa.me/5511978796633/?text=Olá vim para conhecer a marca!"><img src="/img/whatsapp.svg"></a>
+          <a href="https://www.instagram.com/bloom_.cakes?igsh=MXZzdG1xY
+          TIza2V2Mw=="><img src="/img/instagram.svg"></a>
+         <a href="https://www.ifood.com.br/delivery/sao-bernardo-do-campo
+          sp/bloom-cakes---bolos-e-doces-pauliceia/e0e07ce0-2cce-4
+           a05-8ae4-beb7557c0544?UTM_Medium=share"><img src="/img/ifood-svgrepo-com.svg" /></a> </div>
+      <div class="copy">
       &copy; Ti Sages - Todos os direitos Reservados - 2025
+    </div>
     </p>
   </footer>
   </body>
