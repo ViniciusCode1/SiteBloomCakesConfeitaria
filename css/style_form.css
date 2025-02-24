@@ -6,3 +6,121 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+/**Estilização do fórmulario**/
+
+/**Centralizou o fórmulario**/
+.form_encomenda{
+display: flex;
+  margin: 20px auto;
+  justify-content: center;
+  border: 3px solid black;
+  width: 500px;
+  height: 400px;
+  border-radius: 25px;
+  
+}
+#texto_formulario{
+  text-align: center;
+  padding: 10px;
+  border-bottom: 3px solid #6b2035 ;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: rgb(0, 0, 0);
+
+}
+
+.form_produto{
+  padding: 10px;
+  
+  font-weight: bold;
+}
+
+.caixinha_form > option{
+  font-weight: bolder;
+  
+
+}
+
+
+.caixinha_form{
+  background-color: #f0bee3;
+  font-weight: lighter;
+  color: black;
+  border-radius: 25px;
+}
+
+.form_nome{
+  padding: 10px;
+  font-weight: bold;
+}
+
+    .resposta_caixinha{
+      border-radius: 5px;
+      border: 2px solid black;
+      box-shadow: 1px 1px 0ox;
+      width: 200px;
+      
+
+    }
+  .button_pedido{
+    width: 120px;
+    height: auto;
+    padding: 2px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+   
+    
+    
+  }
+
+  .button_pedido:hover{
+background-color: aliceblue;
+color: rgb(91, 8, 97);
+transition: 0.2s ease-in-out;
+box-shadow: 3px 3px 3px;
+font-weight: bolder;
+cursor: pointer;
+
+
+  }
+  .button_limpar{
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .button_limpar:hover{
+    background-color: aliceblue;
+color: rgb(91, 8, 97);
+transition: 0.2s ease-in-out;
+box-shadow: 3px 3px 3px;
+font-weight: bolder;
+cursor: pointer;
+  }
+
+  
+
+  /**Fim estilização do fórmulario**/
+
+  /**Início estilização de texto(parte de encomenda**/
+  .info_encomendas{
+    border-bottom:3px solid #6b2035 ;
+    padding: 10px;
+    
+
+  }
+  .info_encomendas > h3{
+    font-size: 1.4em;
+    margin-bottom: 5px ;
+    
+    
+  }
+
+  .info_envio_encomendas{
+    border-bottom:3px solid rgb(107, 32, 53) ;
+    padding: 10px;
+  }
+
+
+
+
+  

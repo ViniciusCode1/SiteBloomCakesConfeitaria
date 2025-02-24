@@ -116,16 +116,17 @@
 
 
       <!--Formulário pedidos (encomendas)-->
+      <h1 id="texto_formulario">Realize sua encomenda!</h1>
       <section class="form_encomenda">
-        <h1>Encomende para seu evento</h1>
+        
         <form
           action="https://wa.me/5511978796633/?text=Olá vim para conhecer a marca!"
           method=""
           target="_blank"
         >
-          <div class="form_nome">
+          <div class="form_produto">
             <label for="nome">Seu nome:</label>
-            <input
+            <input class="resposta_caixinha"
               type="text"
               id="nome_cliente"
               name="nome"
@@ -133,9 +134,9 @@
               required
             /><br />
           </div>
-          <div class="form_email">
+          <div class="form_produto">
             <label for="email">Seu melhor E-mail:</label>
-            <input
+            <input  class="resposta_caixinha"
               type="email_cliente"
               id="email"
               name="email"
@@ -145,28 +146,32 @@
           </div>
           <div class="form_produto">
             <label for="email">Tipos:</label>
-            <select name="produto_encomendado" required="required">
+            <select class="caixinha_form" name="produto_encomendado" required="required">
               <option value="">Clique e escolha</option>
-              <option value="">Tipo 001</option>
-              <option value="">Tipo 002</option>
-              <option value="">Tipo 003</option>
-              <option value="">Tipo 004</option>
-              <option value="">Tipo 005</option>
-              <option value="">Tipo 006</option>
+              <option value="">Cento de Brigadeiro</option>
+              <option value="">Mini Bombons</option>
+              <option value="">Mini Cones</option>
+              <option value="">Docinhos no Copo</option>
+              
             </select>
           </div>
-          <div class="form_sabor">
+          <div class="form_produto">
             <label for="email">Sabor:</label>
-            <select name="sabor_encomendado" required="required">
+            <select class="caixinha_form" name="sabor_encomendado" required="required">
               <option value="">Clique e escolha</option>
-              <option value="">Sabor A</option>
-              <option value="">Sabor B</option>
-              <option value="">Sabor C</option>
+              <option value="">Brigadeiro</option>
+              <option value="">Beijinho</option>
+              <option value="">Chocolate Nobre</option>
+              <option value=""> Ninho</option>
+              <option value="">Maracujá</option>
+              <option value="">Churros</option>
+              <option value="">Morango</option>
+              <option value="">Limão</option>
             </select>
           </div>
-          <div class="form_qtde">
+          <div class="form_produto">
             <label for="email">Quantidade:</label>
-            <select name="qtde_encomendado" required="required">
+            <select class="caixinha_form" name="qtde_encomendado" required="required">
               <option value="">Clique e escolha</option>
               <option value="">25</option>
               <option value="">50</option>
@@ -174,20 +179,20 @@
               <option value="">150</option>
             </select>
           </div>
-          <div class="form_cep">
+          <div class="form_produto">
             <label for="CEP_cliente">CEP:</label>
-            <input
+            <input class="resposta_caixinha"
               name="CEP_cliente"
               id="CEP_cliente"
               required
               pattern="\d{5}-\d{3}"
               required
-              placeholder="12345-678"
+              placeholder="00000-000"
             />
           </div>
-          <div class="form_pagamento">
+          <div class="form_produto">
             <label for="email">Sua forma de pagamento:</label>
-            <select name="produto_encomendado" required="required">
+            <select class="caixinha_form" name="produto_encomendado" required="required">
               <option value="">Clique e escolha</option>
               <option value="">Débito</option>
               <option value="">Crédito</option>
@@ -195,8 +200,8 @@
             </select>
           </div>
           <br />
-          <button type="submit">Confirmar pedido</button><br />
-          <button type="reset">Limpar seleção</button>
+          <button class="button_pedido" type="submit">Confirmar pedido por WhatsApp</button><br />
+          <button class="button_limpar" type="reset">Limpar seleção</button>
           <br />
         </form>
       </section>

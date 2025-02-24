@@ -14,5 +14,5 @@ body{display: flex;
 main{
     flex:1 1 0;
     border: 0;
-    background-color: rgb(230, 105, 126);
+    background: linear-gradient(to right, rgb(255, 101, 224),rgb(252, 148, 221));
 }
