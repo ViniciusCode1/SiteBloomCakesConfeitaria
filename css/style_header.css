@@ -11,6 +11,7 @@
 .interface {
     max-width: 100%vh;
     margin: 0 auto;
+    
   }
   
   header {
@@ -21,10 +22,11 @@
   .top-header{
     background-color:white;
     padding: 40px;
+  
   }
   
   .top-header .logotipo img {
-    max-width: 100px;
+    max-width: 150px;
     padding: 0px 0px;
     border-radius: 5px;
   }
@@ -42,8 +44,8 @@
     height: 60px;
     font-size: 10px;
     border-radius: 50%;
-    background-color: pink;
-    border: 3px solid rgb(255, 129, 226);
+    background-color: rgb(253, 158, 220);
+    border: 3px solid rgb(203, 102, 180);
     cursor: pointer;
     margin: 5px;
   }

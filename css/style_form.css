@@ -120,7 +120,90 @@ cursor: pointer;
     padding: 10px;
   }
 
+  .info_encomendas {
+    background-color: #fac9fb; 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; 
+    margin: 0 auto ; 
+}
+
+.info_encomendas h3 {
+    font-size: 22px;
+    color: #693611; 
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.info_encomendas p {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.info_encomendas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info_encomendas li {
+    background-color: #ffe4c4; 
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    font-weight: bolder;
+}
+/**Est. Sistema de envio**/
+
+.info_envio_encomendas {
+  background-color: #fac9fb; 
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px; 
+  margin: 0 auto; 
+}
+
+.info_envio_encomendas h2 {
+  font-size: 22px;
+  color: #693611; 
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.info_envio_encomendas p {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.iinfo_envio_encomendas ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info_envio_encomendas li {
+  background-color: #ffe4c4; 
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: bolder;
+}
 
 
 
-  
+
+
+.info_envio_encomendas ul {
+list-style: none;
+padding: 0;
+}
