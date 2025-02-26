@@ -9,9 +9,9 @@
       href="/img/Bloom Cake's.jpg"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="/css/style_header.css" />
-    <link rel="stylesheet" href="/css/style_footer.css" />
-    <link rel="stylesheet" href="/css/style_body.css" />
+    <link rel="stylesheet" href="/css/style_header_FIXO.css" />
+  <link rel="stylesheet" href="/css/style_footer_FIXO.css" />
+  <link rel="stylesheet" href="/css/style_body_FIXO.css"/>
   </head>
 
   <body>
@@ -90,7 +90,132 @@
     <!--Conteúdo principal-->
     <main>
       <Section>
+        <section class="form_personalize">
+          <h1>Faça seu próprio Bolo!</h1>
+<!--Texto de apresentação da pagina de personalizar o próprio bolo-->
+          <div class="text_personalize">
+  <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas est magnam. Corrupti, eos. Ab quam quasi pariatur nam necessitatibus aspernatur, consequuntur aut, nostrum natus iste alias quae, voluptas harum.
+  </p>
+</div>
 
+<!--formulário para fazer o próprio bolo-->
+          <form
+            action="https://wa.me/5511978796633/?text=Olá vim para conhecer a marca!"
+            method=""
+            target="_blank"
+          ><div class="for_">
+          <label for="email">Qual será a massa do bolo?</label>
+            <select name="produto_encomendado" required="required">
+              <option value="">Opções</option>
+              <option value="">Massa tipo 001</option>
+              <option value="">Massa tipo 001</option>
+              <option value="">Massa tipo 001</option>
+              <option value="">Massa tipo 001</option>
+            </select>
+          </div>
+            <div class="form_produto">
+              <label for="email">Qual será o recheio? </label>
+              <select name="produto_encomendado" required="required">
+                <option value="">Opções</option>
+                <option value="">Recheio de xxxxx</option>
+                <option value="">Recheio de xxxxx</option>
+                <option value="">Recheio de xxxxx</option>
+                <option value="">Não quero</option>
+              </select>
+            </div>
+            <div class="form_sabor">
+              <label for="email">Cobertura preferida? </label>
+              <select name="sabor_encomendado" required="required">
+                <option value="">Opções</option>
+                <option value="">Sabor A</option>
+                <option value="">Sabor B</option>
+                <option value="">Sabor C</option>
+                <option value="">Não quero</option>
+              </select>
+            </div>
+            <div class="form_qtde">
+              <label for="email">Decoração do bolo:</label>
+              <select name="qtde_encomendado" required="required">
+                <option value="">Frutas</option>
+                <option value="">Morango
+                </option>
+                <option value="">Banana</option>
+                <option value="">Coco</option>
+                <option value="">Maça</option>
+                <option value="">Maracujá</option>
+              </select>
+              <select name="qtde_encomendado" required="required">
+                <option value="">Doces</option>
+                <option value="">Fini</option>
+                <option value="">Confeitos</option>
+                <option value="">Amendoim</option>
+              </select>
+              <div>
+              <label for="email">Observações a mais:</label><br/>
+              <textarea name="mensagem_a_mais" placeholder="Insira mais detalhes do seu bolo aqui!">
+                
+              </textarea>
+            </div>
+            </div>
+
+
+
+            <div class="form_qtde"></div>
+              <label for="email">E peso do seu bolo?</label>
+              <select name="qtde_encomendado" required="required">
+                <option value="">Opções</option>
+                <option value="">2 Quilos</option>
+                <option value="">4 Quilos</option>
+                <option value="">6 Quilos</option>
+              </select>
+            </div>
+            <div class="form_nome"></div>
+              <label for="nome">Seu nome:</label>
+              <input
+                type="text"
+                id="nome_cliente"
+                name="nome"
+                placeholder="Nome Completo"
+                required
+              />
+            </div>
+            <div class="form_email">
+              <label for="email">Seu melhor E-mail:</label>
+              <input
+                type="email_cliente"
+                id="email"
+                name="email"
+                placeholder="MeuEmail123@gmail.com"
+                required
+              />
+            </div>
+            <div class="form_cep">
+              <label for="CEP_cliente">CEP:</label>
+              <input
+                name="CEP_cliente"
+                id="CEP_cliente"
+                required
+                pattern="\d{5}-\d{3}"
+                required
+                placeholder="12345-678"
+              />
+            </div>
+            <div class="form_pagamento">
+              <label for="email">Sua forma de pagamento:</label>
+              <select name="produto_encomendado" required="required">
+                <option value="">Clique e escolha</option>
+                <option value="">Débito</option>
+                <option value="">Crédito</option>
+                <option value="">Pix</option>
+              </select>
+            </div>
+            <br />
+            <button type="submit">Confirmar pedido</button><br />
+            <button type="reset">Limpar seleção</button>
+          </form>
+        </section>
+      <!--FINAL Formulário pedidos (encomendas)-->
       </Section>
     
  <!--Fim Conteúdo principal-->

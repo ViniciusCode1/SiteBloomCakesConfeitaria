@@ -1,0 +1,24 @@
+/*Reset*/
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#bolo_de_pote_C {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+  margin: 50px;
+}
+#produto-01 {
+  display:block;
+  margin: 100px 50px;
+padding: 50px;
+  border: 5px solid rgb(163, 14, 126);
+  border-radius: 20px;
+  max-width: 900px;
+}
+#descriptionproduct {
+  border: 2px solid rgb(163, 14, 126);
+}
