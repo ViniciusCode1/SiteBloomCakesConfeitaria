@@ -9,9 +9,9 @@
       href="/img/Bloom Cake's.jpg"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="/css/style_header.css" />
-    <link rel="stylesheet" href="/css/style_footer.css" />
-    <link rel="stylesheet" href="/css/style_body.css" />
+    <link rel="stylesheet" href="/css/style_header_FIXO.css" />
+  <link rel="stylesheet" href="/css/style_footer_FIXO.css" />
+  <link rel="stylesheet" href="/css/style_body_FIXO.css"/>
   </head>
 <body>
     <header>
@@ -90,8 +90,21 @@
       </header>
        <!--Conteúdo principal-->
       <main>
+<div><h1>Serviço de Atendimento ao Cliente</h1></div>
         <section>
+          <h2>Envie um e-mail para nós! Será um prazer te ajudar.</h2>
+          <form action="https://formsubmit.co/viniciuspassos2004@gmail.com" method="POST"><!--Bloommcakes@gmail.com-->
+                <label for="name">Nome</label>
+<input type="text" name="name" required/>
+<label for="email">E-mail</label>
+<input type="email" name="email" required/>
 
+<label for="mensagem_cliente">Mensagem</label>
+<textarea name="mensagem_cliente" placeholder="Escreva para nós aqui!"></textarea>
+<input type="hidden" name="_next" value="http://127.0.0.1:5501/Html/obrigado_pelo_email.html">
+<input type="hidden" name="_captcha" value="false">        
+<button type="submit">Enviar e-mail</button>    
+</form>
         </section>
       
  <!--Fim Conteúdo principal-->

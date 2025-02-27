@@ -13,6 +13,7 @@
   bottom: 10%;
   background: rgb(176, 31, 125);
   font-family: Arial, Helvetica, sans-serif;
+  padding: 50px;
 }
 
 .rodape_texto{
@@ -42,5 +43,5 @@
 }
 .contato img {
   width: 30px;
-  height: 30px;
+  height: auto;
 }
