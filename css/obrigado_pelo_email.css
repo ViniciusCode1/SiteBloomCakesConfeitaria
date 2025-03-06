@@ -1,0 +1,40 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.obrigado_container{
+    display: block;
+}
+#agradecimento_email{
+    padding: 30px 10px;
+text-align: center;
+margin-top: 100px;
+font-size: 30px;
+}
+
+#_text {
+    padding: 0px 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#agradecimento_email_foto img{
+    width: 500px;
+    height: auto;
+    border-radius: 50px;
+    margin-bottom: 50px;
+}
+#agradecimento_email_foto {display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+#return_text{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 40px;
+}

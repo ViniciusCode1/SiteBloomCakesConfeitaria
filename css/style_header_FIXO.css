@@ -165,4 +165,16 @@
     width: 30px;
   }
   /*Fim menu navegação*/
+
+  #site_name{
+    display: flex;
+    justify-content: center;
+    
+
+  }
+  #site_titulo{
+    
+    font-size: 50px;
+    text-align: center;
+  }
   
