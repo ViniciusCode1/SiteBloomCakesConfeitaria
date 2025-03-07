@@ -121,91 +121,91 @@
       <h1 id="form">Realize sua encomenda!</h1>
       <section class="form_encomenda">
         
-        <form
-          action="https://wa.me.com/send/?phone=5511978796633" 
-          method="_blank"
-          target=""
-        >
+        <form id="pedidoForm">
           <div class="form_produto">
             <label for="nome">Seu nome:</label>
-            <input class="resposta_caixinha"
-              type="text"
-              id="nome_cliente"
-              name="nome"
-              placeholder="Nome Completo"
-              required
-            /><br />
+            <input class="resposta_caixinha" type="text" id="nome_cliente" name="nome" placeholder="Nome Completo" required />
           </div>
           <div class="form_produto">
             <label for="email">Seu melhor E-mail:</label>
-            <input  class="resposta_caixinha"
-              type="email_cliente"
-              id="email"
-              name="email"
-              placeholder="MeuEmail123@gmail.com"
-              required
-            />
+            <input class="resposta_caixinha" type="email" id="email_cliente" name="email" placeholder="MeuEmail123@gmail.com" required />
           </div>
           <div class="form_produto">
-            <label for="email">Tipos:</label>
-            <select class="caixinha_form" name="produto_encomendado" required="required">
+            <label for="produto">Tipos:</label>
+            <select class="caixinha_form" id="produto" name="produto_encomendado" required>
               <option value="">Clique e escolha</option>
-              <option value="">Cento de Brigadeiro</option>
-              <option value="">Mini Bombons</option>
-              <option value="">Mini Cones</option>
-              <option value="">Docinhos no Copo</option>
-              
+              <option value="Cento de Brigadeiro">Cento de Brigadeiro</option>
+              <option value="Mini Bombons">Mini Bombons</option>
+              <option value="Mini Cones">Mini Cones</option>
+              <option value="Docinhos no Copo">Docinhos no Copo</option>
             </select>
           </div>
           <div class="form_produto">
-            <label for="email">Sabor:</label>
-            <select class="caixinha_form" name="sabor_encomendado" required="required">
+            <label for="sabor">Sabor:</label>
+            <select class="caixinha_form" id="sabor" name="sabor_encomendado" required>
               <option value="">Clique e escolha</option>
-              <option value="">Brigadeiro</option>
-              <option value="">Beijinho</option>
-              <option value="">Chocolate Nobre</option>
-              <option value=""> Ninho</option>
-              <option value="">Maracujá</option>
-              <option value="">Churros</option>
-              <option value="">Morango</option>
-              <option value="">Limão</option>
+              <option value="Brigadeiro">Brigadeiro</option>
+              <option value="Beijinho">Beijinho</option>
+              <option value="Chocolate Nobre">Chocolate Nobre</option>
+              <option value="Ninho">Ninho</option>
+              <option value="Maracujá">Maracujá</option>
+              <option value="Churros">Churros</option>
+              <option value="Morango">Morango</option>
+              <option value="Limão">Limão</option>
             </select>
           </div>
           <div class="form_produto">
-            <label for="email">Quantidade:</label>
-            <select class="caixinha_form" name="qtde_encomendado" required="required">
+            <label for="quantidade">Quantidade:</label>
+            <select class="caixinha_form" id="quantidade" name="qtde_encomendado" required>
               <option value="">Clique e escolha</option>
-              <option value="">25</option>
-              <option value="">50</option>
-              <option value="">100</option>
-              <option value="">150</option>
+              <option value="25">25</option>
+              <option value="50">50</option>
+              <option value="100">100</option>
+              <option value="150">150</option>
             </select>
           </div>
           <div class="form_produto">
             <label for="CEP_cliente">CEP:</label>
-            <input class="resposta_caixinha"
-              name="CEP_cliente"
-              id="CEP_cliente"
-              required
-              pattern="\d{5}-\d{3}"
-              required
-              placeholder="00000-000"
-            />
+            <input class="resposta_caixinha" name="CEP_cliente" id="CEP_cliente" required pattern="\d{5}-\d{3}" placeholder="00000-000" />
           </div>
           <div class="form_produto">
-            <label for="email">Sua forma de pagamento:</label>
-            <select class="caixinha_form" name="produto_encomendado" required="required">
+            <label for="pagamento">Sua forma de pagamento:</label>
+            <select class="caixinha_form" id="pagamento" name="forma_pagamento" required>
               <option value="">Clique e escolha</option>
-              <option value="">Débito</option>
-              <option value="">Crédito</option>
-              <option value="">Pix</option>
+              <option value="Débito">Débito</option>
+              <option value="Crédito">Crédito</option>
+              <option value="Pix">Pix</option>
             </select>
           </div>
           <br />
-          <button class="button_pedido" type="submit">Confirmar pedido por WhatsApp</button><br />
+          <button class="button_pedido" type="submit">Confirmar pedido por WhatsApp</button>
           <button class="button_limpar" type="reset">Limpar seleção</button>
-          <br />
         </form>
+        
+        <script>
+          document.getElementById("pedidoForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            
+            const nome = document.getElementById("nome_cliente").value;
+            const email = document.getElementById("email_cliente").value;
+            const produto = document.getElementById("produto").value;
+            const sabor = document.getElementById("sabor").value;
+            const quantidade = document.getElementById("quantidade").value;
+            const cep = document.getElementById("CEP_cliente").value;
+            const pagamento = document.getElementById("pagamento").value;
+            
+            if (!nome || !email || !produto || !sabor || !quantidade || !cep || !pagamento) {
+              alert("Por favor, preencha todos os campos.");
+              return;
+            }
+            
+            const telefone = "5511978796633";
+            const mensagem = `Olá, meu nome é ${nome}.\nGostaria de encomendar:\nProduto: ${produto}\nSabor: ${sabor}\nQuantidade: ${quantidade}\nCEP: ${cep}\nForma de pagamento: ${pagamento}\nMeu e-mail: ${email}`;
+            const url = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
+            
+            window.open(url, "_blank");
+          });
+        </script>
       </section>
     <!--FINAL Formulário pedidos (encomendas)-->
    
