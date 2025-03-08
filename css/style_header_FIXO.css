@@ -21,14 +21,15 @@
   
   .top-header{
     background-color:white;
-    padding: 40px;
+    padding: 40px 40px 10px 40px;
   
   }
   
-  .top-header .logotipo img {
-    max-width: 150px;
+  .top-header .logotipo{
+    max-width: 90%;
     padding: 0px 0px;
     border-radius: 5px;
+    min-width: 70%;
   }
   
   .top-header .interface {
@@ -177,4 +178,14 @@
     font-size: 50px;
     text-align: center;
   }
-  
+  .foto_bloom_extenso{
+    max-width: 100%; /* Garante que a imagem nunca ultrapasse o contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Evita espaços extras abaixo da imagem */
+}
+
+/* Ajustes específicos para telas menores */
+@media (max-width:425px) {
+  .nome_extenso {
+    width: 80vw; /* Deixa um pequeno espaçamento nas bordas */
+    max-width: 350px; /* Ajuste para evitar que fique muito pequeno */}}

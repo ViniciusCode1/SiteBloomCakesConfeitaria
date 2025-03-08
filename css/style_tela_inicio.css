@@ -8,9 +8,32 @@
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 10px;
+  }
+
+  .vitrine_produtos img {
+  background: #f5ebe0;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 580px;
+    transform:0.3s ease-in-out;
+  }
+  .Queridinhos_text{
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bolder;
+    font-size: 20px
+  }
+  .Queridinhos_box{ 
+    background-color: #ffe5b4;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+  .vitrine_produtos img:hover {
+    transition: transform scale(1.05);
   }
   
   /* Responsividade para telas menores */
@@ -58,4 +81,19 @@
       max-width: 300px;
     }
   }
+  @keyframes scroll {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+  }
   
+  .auto-scroll {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    animation: scroll 5s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+    will-change: transform; /* Otimiza a animação */
+  }
+  html {
+    scroll-behavior: smooth;
+  }

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/style_header_FIXO.css" />
   <link rel="stylesheet" href="/css/style_footer_FIXO.css" />
   <link rel="stylesheet" href="/css/style_body_FIXO.css"/>
+  <link rel="stylesheet" href="/css/style_sac.css"/>
   
 </head>
 <body>
@@ -54,7 +55,7 @@
                 <li><a href="Tela-Inicial.html" alt="Tela Inicial">Início</a></li>
                 <li><a href="Sobre-nos.html" alt="Sobre a loja">Sobre Nós</a></li>
                 <li class="menu-produtos" alt="Produtos">
-                  <a href="Catalogo.html"
+                  <a href="Tela-Inicial.html#lista_produtos"
                     >Catálogo<i class="bi bi-arrow-down-short"></i
                   ></a>
                 </li>
@@ -77,24 +78,25 @@
         </section>
       </header>
        <!--Conteúdo principal-->
-      <main>
-<div id="title_sac"><h1>Serviço de Atendimento ao Cliente</h1></div>
+       <main>
+        <div id="title_sac"><h1>Serviço de Atendimento ao Cliente</h1></div>
+ 
+        <div id="title_form_sac"><h2>Envie um e-mail para nós! Será um prazer te ajudar.</h2></div>   
+        <section class="form_box" >
+          <div id="form_enviar_email">
+                  <form action="https://formsubmit.co/Bloommcakes@gmail.com" method="POST" id="meuFormulario"><!--Bloommcakes@gmail.com-->
+                        <label for="name">Nome</label>
+        <input type="text" name="name" required/>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" required/>
         
-<section >
-          <h2>Envie um e-mail para nós! Será um prazer te ajudar.</h2>
-          <form action="https://formsubmit.co/Bloommcakes@gmail.com" method="POST"><!--Bloommcakes@gmail.com-->
-                <label for="name">Nome</label>
-<input type="text" name="name" required/>
-<label for="email">E-mail</label>
-<input type="email" name="email" required/>
-
-<label for="mensagem_cliente">Mensagem</label>
-<textarea name="mensagem_cliente" placeholder="Escreva para nós aqui!"></textarea>
-<input type="hidden" name="_next" value="http://127.0.0.1:5501/Html/obrigado_pelo_email.html">
-<input type="hidden" name="_captcha" value="false">        
-<button type="submit">Enviar e-mail</button>    
-</form>
-        </section>
+        <label for="mensagem_cliente">Mensagem</label>
+        <textarea name="mensagem_cliente" placeholder="Escreva para nós aqui!"></textarea>
+        <input type="hidden" name="_next" value="/Html/obrigado_pelo_email.html">
+        <input type="hidden" name="_captcha" value="false">        
+        <button type="submit">Enviar e-mail!</button>    
+        </form>
+        </div></section> 
       
  <!--Fim Conteúdo principal-->
 

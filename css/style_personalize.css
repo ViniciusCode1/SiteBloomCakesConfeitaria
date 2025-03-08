@@ -4,7 +4,6 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f8d7ff;
-    padding: 20px;
 }
 
 h1, h2 {
@@ -76,26 +75,17 @@ button:hover {
 }
 
 /* Responsividade */
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-    
-    .text_personalize, form {
-        width: 90%;
-    }
-    
-    input, select, textarea {
-        font-size: 14px;
-    }
-}
 @media (max-width: 1024px) {
     .interface {
       flex-direction: column;
       align-items: center;
       text-align: center;
-    }
-     }
+    }     
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }}
 
      @media (max-width: 768px) {
         .form_encomenda {
@@ -129,4 +119,3 @@ button:hover {
           padding: 15px;
         }
       }
-      

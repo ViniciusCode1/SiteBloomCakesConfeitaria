@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="/css/style_tela_inicio.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="/css/style_personalize.css">
-
+  <link rel="stylesheet" href="/css/style_produtos_catalogo.css">
 </head>
 
 
@@ -27,20 +27,10 @@
   <header>
     <section class="top-header">
     <div class="interface">
-    <figure class="logotipo">
-      <a href="Tela-Inicial.html">
-        <img
-          src="/img/Bloom Cake's.jpg"
-          alt=" logo da confeitaria"
-        />
-      </a>
-      
-    </figure>
-    <div id="site_name">
-      <h1 id="site_titulo">
-        Bloom Cake's
-      </h1>
-    </div>
+    <a href="Tela-Inicial.html"><img src="/img/Bloom Cake's-extenso.jpg" class="nome_extenso"></a>
+    
+    
+    
     <div class="btn-social">
       <a href="https://wa.me/5511978796633/?text=Olá vim para conhecer a marca!"
       target="_blank"><button><img src="/img/whatsapp.svg
@@ -66,7 +56,7 @@
           <li><a href="Tela-Inicial.html" alt="Tela Inicial">Início</a></li>
           <li><a href="Sobre-nos.html" alt="Sobre a loja">Sobre Nós</a></li>
           <li class="menu-produtos" alt="Produtos">
-            <a href="Catalogo.html"
+            <a href="#lista_produtos"
               >Catálogo<i class="bi bi-arrow-down-short"></i
             ></a>
           </li>
@@ -90,79 +80,215 @@
 </header>
   <!--Conteúdo-->
   <main class="corpo_site">
-    <!-- Produtos em Hero Image (Imagem de grande proporção) com botões para trocar a imagem -->
-    <h1 class="titulo02">Destaques</h1>
-    <section class="fotos_grandes">
-      <article id="chamativos">
-        <a href="" alt="Produto 01">
-          <img src="/img/imagens bloom cakes/bolo-floral-edit.jpg" alt="Resumo do produto01" />
-          <p>
-            Bolo Floral
-          </p>
-        </a>
-        <!---->
-        <!---->
-        <!---->
-        <a href="#" alt="Produto 02">
-          <img src="/img/imagens bloom cakes/cento-brigadeiro.jpg" alt="Resumo do Produto 02" />
-          <p>
-            Cento de Brigadeiro
-          </p>
-        </a>
-        <!---->
-        <!---->
-        <!---->
-        <a href="#" alt="Produto 03">
-          <img src="/img/img-redimensionadas/mousse-maracuja.jpg" alt="Resumo do produto03" />
-          <p>
-            Mousse de Maracujá
-          </p>
-        </a>
-        <!---->
-        <!---->
-        <!---->
-        <a href="#" alt="Produto 04">
-          <img src="/img/imagens bloom cakes/cone-chocolate.jpg" alt="Resumo do produto04" />
-          <p>
-           Cone recheado de Chocolate ao Leite
-          </p>
-        </a>
-        <!---->
-        <!---->
-        <!---->
-        <a href="#" alt="Produto 05">
-          <img src="/img/imagens bloom cakes/bolo-prestigio.jpg" alt="Resumo do Produto 05" />
-          <p>
-            Bolo de Massa branca Recheado com Coco
-          </p>
-        </a>
-        <!---->
-        <!---->
-        <!---->
-      </article>
-    </section>
-    <br />
-    <br />
-
-    <!-- Produtos de formato de vitrine -->
-      <h2 class="titulo02">Queridinhos da marca</h2>
+    <!-- Produtos Mais Queridos da marca -->
+      <h2 class="titulo01">Queridinhos da marca</h2>
+      <div class="
+      Queridinhos_box">
+        <p class="
+        Queridinhos_text">
+          Nossos queridinhos são mais do que doces, são experiências inesquecíveis! Cada receita é feita com amor, qualidade e um toque único que faz toda a diferença. Escolha um dos nossos top 3  favoritos dos clientes, e deixe seu dia mais doce!"
+        </p>
+      </div>
       <section class="vitrine_produtos">
       <a href="#" alt="Produto 01">
-        <img src="/img/imagens bloom cakes/bolo-maracuja.jpg" alt="Resumo do produto01" /></a>
-        
-        
-      <!---->
-      <!---->
-      <!---->
+        <img src="/img/img-redimensionadas/bolo-maracuja.jpg" alt="Resumo do produto01" /></a>
       <a href="#" alt="Produto 10">
-        <img src="/img/imagens bloom cakes/mini-cone.jpg" alt="Resumo do produto10" /></a>
-        <a href="#" alt="Produto 10">
-          <img src="/img/imagens bloom cakes/trufa-morango.jpg" alt="Resumo do produto10" /></a>
-      <!---->
-      <!---->
-      <!---->
+        <img src="/img/img-redimensionadas/cone-chocolate.jpg" alt="Resumo do produto10" /></a>
+        <a href="" alt="Produto 10">
+          <img src="/img/img-redimensionadas/trufa-morango.jpg" alt="Resumo do produto10" /></a>
     </section>
- 
+    <!-- Produtos Mais Queridos da marca - FIM -->
+
+    <!--Vitrine-->
+    <h2 class="titulo02">Catálogo de Produtos</h2>
+    <div class="
+    Queridinhos_box">
+      <p class="
+      Queridinhos_text">
+    Catálogo Bloom Cake’s
+Sabores irresistíveis, feitos com carinho para adoçar seus momentos. Escolha seu favorito e deixe-se levar pelo prazer de cada mordida!
+</p>
+</div>
+
+
+    <section class="lista_produtos">
+      <ol class="lista_produtos" id="lista_produtos">
+        <li>
+          <figure class="img_produto">
+            <img src="/img/imagens bloom cakes/bolo-prestigio.jpg" alt="Bolo Prestígio" />
+          </figure>
+          <h1>
+            <a href="#">Bolo de Massa Branca Recheado com Coco</a>
+          </h1>
+          <details class="descripton_">
+            <summary>Descubra o Prazer do Prestígio no Pote!</summary>
+            Imagine a combinação perfeita de camadas de bolo massa de chocolate úmido, intercaladas com um creme de coco cremoso e delicioso.
+          </details>
+        </li>
+        <li>
+          <figure class="img_produto">
+            <img src="/img/imagens bloom cakes/bolo-chocolate.jpg" alt="Bolo de Chocolate" />
+          </figure>
+          <h1>
+            <a href="#">Bolo de Massa de Cacau com Recheio de Chocolate ao Leite</a>
+          </h1>
+          <details class="descripton_">
+            <summary>Explosão de Chocolate!</summary>
+            Massa de chocolate fofinha, recheada com  chocolate ao leite nobre  e cobertura irresistível.
+          </details>
+        </li>
+        <li>
+          <figure class="img_produto">
+            <img src="/img/imagens bloom cakes/bolo-maracuja.jpg" alt="Bolo de maracujá" />
+          </figure>
+          <h1>
+            <a href="#">Bolo de Massa Branca com Recheio de Maracujá</a>
+          </h1>
+          <details class="descripton_">
+            <summary>O Azedinho que todo mundo ama!</summary>
+            Massa branca molhadinha com recheio de Maracujá e uma cobertura azedinha de maracujá.
+          </details>
+        </li>
+        <li>
+          <figure class="img_produto">
+            <img src="/img/imagens bloom cakes/bolo-ninho.jpg" alt="Bolo de Ninho" />
+          </figure>
+          <h1>
+            <a href="#">Bolo de Massa Branca Recheado com Leite Ninho</a>
+          </h1>
+          <details class="descripton_">
+            <summary>Frescura e Sabor!</summary>
+            Massa branca leve, recheada com leite ninho acompanhada com uma cobertura de ninho e leite em pó.
+          </details>
+        </li>
+        <li>
+          <figure class="img_produto">
+            <img src="/img/imagens bloom cakes/empada.jpg" alt="Empada" />
+          </figure>
+          <h1>
+            <a href="#">Empada</a>
+          </h1>
+          <details class="descripton_">
+            <summary>Uma empada vai bem!</summary>
+             A empada de frango cremoso traz uma massa crocante e dourada, recheada com frango desfiado em um molho cremoso e temperos frescos. Já a empada de palmito é uma opção vegetariana que encanta com sua massa amanteigada e um recheio suculento de palmito, cebola refogada, azeitonas e orégano.
+
+          </details>
+        </li>
+        <li>
+          <figure class="img_produto">
+            <img src="/img/imagens bloom cakes/trufa.jpg" alt="Bombom de chocolate" />
+          </figure>
+          <h1>
+            <a href="#">Bombom de Chocolate</a>
+          </h1>
+          <details class="descripton_">
+            <summary>Amantes de bombons!</summary>
+            Você escolhe! Chocolate ao leite, brigadeiro, morango, limão, maracujá, leite ninho, coco. Uma variedades de delícias que lhe esperam.
+          </details>
+        </li>
+        <li>
+          <figure class="img_produto">
+            <img src="/img/imagens bloom cakes/mousse-maracuja.jpg" alt="Mousse de maracujá" />
+          </figure>
+          <h1>
+            <a href="#">Mousse de maracujá</a>
+          </h1>
+          <details class="descripton_">
+            <summary>Simples e Delicioso!</summary>
+             Uma sobremesa leve e refrescante que combina a acidez do maracujá fresco com a suavidade do creme, decorada com sementes de maracujá.
+
+          </details>
+        </li>
+        <li>
+          <figure class="img_produto">
+            <img src="/img/img-redimensionadas/cone-chocolate.jpg" alt="Cone de Chocolate" />
+          </figure>
+          <h1>
+            <a href="#">Cone de Chocolate ao Leite</a>
+          </h1>
+          <details class="descripton_">
+            <summary>Sabor Irresistível!</summary>
+            Uma casquinha crocante recheada com uma ganache de chocolate ao leite (Nestlé) cremosa e irresistível, envolta por uma camada de chocolate meio amargo, com deliciosos pedaços de amendoim trazendo uma perfeita combinação entre sabor e textura. 
+          </details>
+        </li>
+        <li>
+          <figure class="img_produto">
+            <img src="/img/imagens bloom cakes/bolo-floral-edit.jpg" alt="Bolo Floral" />
+          </figure>
+          <h1>
+            <a href="#">Bolo Floral</a>
+          </h1>
+          <details class="descripton_">
+            <summary>Lindeza e Sabor em forma de bolo.</summary>
+            Feito com massa branca molhadinha, recheado com Ninho,  chocolate e coberto com ButterCream. A combinação perfeita entre sabor e beleza!
+            .
+          </details>
+        </li>
+        <li>
+          <figure class="img_produto">
+            <img src="/img/imagens bloom cakes/cento-brigadeiro.jpg" alt="Cento de brigadeiro" />
+          </figure>
+          <h1>
+            <a href="#">Cento de Brigadeiro</a>
+          </h1>
+          <details class="descripton_">
+            <summary>O Paraíso!</summary>
+            Nosso cento de brigadeiro é a escolha perfeita para adoçar sua festa. Diversos sabores para todos os tipos de paladares. Ideal também para eventos ou para aquele momento especial! Peça agora e leve mais sabor para sua celebração. 
+          </details>
+        </li>
+        <li>
+          <figure class="img_produto">
+            <img src="/img/imagens bloom cakes/mini-trufa.jpg" alt="Cento de brigadeiro" />
+          </figure>
+          <h1>
+            <a href="#">Mini Bombons</a>
+          </h1>
+          <details class="descripton_">
+            <summary>Derreta-se com eles!</summary>
+           Os mini bombons chegaram para melhorar seu momento! Diversas opções de recheio para aproveitar de montão. Fica díficil escolher um só! 
+          </details>
+        </li>
+        <li>
+          <figure class="img_produto">
+            <img src="/img/img-redimensionadas/mini-cone.jpg" alt="Cento de brigadeiro" />
+          </figure>
+          <h1>
+            <a href="#">Mini Cones</a>
+          </h1>
+          <details class="descripton_">
+            <summary>Pequeno no tamanho, gigante no sabor!</summary>
+            Uma casquinha crocante recheada com uma variedade de sabores, como maracujá, chocolate  e ninho, perfeita para uma mordida doce e irresistível! 
+          </details>
+        </li>
+        <li>
+          <figure class="img_produto">
+            <img src="/img/img-redimensionadas/cone-maracuja.jpg" alt="Cento de brigadeiro" />
+          </figure>
+          <h1>
+            <a href="#">Cone de Maracujá</a>
+          </h1>
+          <details class="descripton_">
+            <summary>A Casquinha Top
+              !</summary>
+              Uma casquinha crocante recheada com um recheio de maracujá irresistível. Perfeito para quem ama um doce equilibrado entre textura e sabor! 
+          </details>
+        </li>
+        <li>
+          <figure class="img_produto">
+            <img src="/img/img-redimensionadas/mini-mousse.jpg" alt="Cento de brigadeiro" />
+          </figure>
+          <h1>
+            <a href="#">Mini Mousses</a>
+          </h1>
+          <details class="descripton_">
+            <summary>Mini Delícias
+              !</summary>
+              Leves, cremosos e com duas opções de sabores; Limão e Maracujá. Sobremesas delicadas e refrescantes, ideais para qualquer momento do dia. 
+          </details>
+        </li>
+      </ol>
+    </section>
+    
     <!---->
     <!---->
     <!---->
