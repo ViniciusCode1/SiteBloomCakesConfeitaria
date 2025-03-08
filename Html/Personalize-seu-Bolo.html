@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/style_header_FIXO.css" />
   <link rel="stylesheet" href="/css/style_footer_FIXO.css" />
   <link rel="stylesheet" href="/css/style_body_FIXO.css"/>
+  <link rel="stylesheet" href="/css/style_personalize.css">
   </head>
 
   <body>
@@ -106,13 +107,13 @@
 
     <!--Conteúdo principal-->
     <main>
-      <Section>
+      
         <section class="form_personalize">
           <h1>Faça seu próprio Bolo!</h1>
 <!--Texto de apresentação da pagina de personalizar o próprio bolo-->
           <div class="text_personalize">
   <p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas est magnam. Corrupti, eos. Ab quam quasi pariatur nam necessitatibus aspernatur, consequuntur aut, nostrum natus iste alias quae, voluptas harum.
+    Nossa página de encomendas oferece uma experiência prática e intuitiva para que você possa solicitar seus produtos de forma rápida e segura. Com apenas alguns cliques, você escolhe os itens desejados, personaliza seu pedido que será encaminhado ao WhatsApp.
   </p>
 </div>
 
@@ -133,17 +134,25 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas est magna
             <label for="massa">Qual será a massa do bolo?</label>
             <select name="massa" id="massa" required="required">
                 <option value="">Opções</option>
-                <option value="Massa tipo 001">Massa tipo 001</option>
-                <option value="Massa tipo 002">Massa tipo 002</option>
-                <option value="Massa tipo 003">Massa tipo 003</option>
+                <option value="Massa tipo chocolate">Chocolate</option>
+                <option value="Massa tipo branca">Branca</option>
+                
             </select>
         </div>
         <div class="form_produto">
             <label for="recheio">Qual será o recheio?</label>
             <select name="recheio" id="recheio" required="required">
                 <option value="">Opções</option>
-                <option value="Recheio de chocolate">Recheio de chocolate</option>
-                <option value="Recheio de morango">Recheio de morango</option>
+                <option value="Recheio de chocolate">Recheio de chocolate ao leite</option>
+                <option value="Recheio de maracujá">Recheio de maracujá</option>
+                <option value="Recheio de maracujá c/ chocolate(ao leite)">Recheio de maracujá c/ chocolate(ao leite)</option>
+                <option value="Recheio de Ninho">Recheio de ninho</option>
+                <option value="Recheio de ninho com nutella">Recheio de ninho com nutella</option>
+                <option value="Recheio de Chocolate Branco">Recheio de Chocolate Branco</option>
+                
+                <option value="Recheio de limão">Recheio de limão</option>
+                <option value="Recheio de prestígio">Recheio de prestígio</option>
+                
                 <option value="Não quero recheio">Não quero recheio</option>
             </select>
         </div>
@@ -152,7 +161,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas est magna
             <select name="cobertura" id="cobertura" required="required">
                 <option value="">Opções</option>
                 <option value="Cobertura de chocolate">Cobertura de chocolate</option>
-                <option value="Cobertura de brigadeiro">Cobertura de brigadeiro</option>
+                <option value="Cobertura de buttercream">Cobertura de Buttercream</option>
                 <option value="Não quero cobertura">Não quero cobertura</option>
             </select>
         </div>
@@ -160,17 +169,24 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas est magna
             <label for="decoracao">Decoração do bolo:</label>
             <select name="decoracao" id="decoracao" required="required">
                 <option value="">Opções</option>
-                <option value="Frutas">Frutas</option>
-                <option value="Doces">Doces</option>
+                <option value="Topo de Bolo">Topo de Bolo</option>
+                <option value="Papel Arroz">Papel Arroz</option>
+                <option value="Morangos">Morangos</option>
+                <option value="Não quero decoração">Não quero decoração</option>
             </select>
         </div>
         <div class="form_qtde">
             <label for="peso">E peso do seu bolo?</label>
             <select name="peso" id="peso" required="required">
                 <option value="">Opções</option>
+                <option value="1 Quilos">1 Quilos</option>
                 <option value="2 Quilos">2 Quilos</option>
+                <option value="3 Quilos">3 Quilos</option>
                 <option value="4 Quilos">4 Quilos</option>
+                
+                <option value="5 Quilos">5 Quilos</option>
                 <option value="6 Quilos">6 Quilos</option>
+                
             </select>
         </div>
         <div class="form_nome">
@@ -247,7 +263,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas est magna
 </html>
 
       <!--FINAL Formulário pedidos (encomendas)-->
-      </Section>
+      
     
  <!--Fim Conteúdo principal-->
 

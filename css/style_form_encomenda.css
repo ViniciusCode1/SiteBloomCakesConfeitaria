@@ -6,40 +6,37 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-/**Estilização do fórmulario**/
+/**Estilização do formulário**/
 
-/**Centralizou o fórmulario**/
+/**Centralizou o formulário**/
 .form_encomenda{
-display: flex;
+  display: flex;
   margin: 20px auto;
   justify-content: center;
   border: 3px solid black;
-  width: 500px;
-  height: 400px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
   border-radius: 25px;
-  
+  padding: 20px;
 }
+
 #texto_formulario{
   text-align: center;
   padding: 10px;
   border-bottom: 3px solid #6b2035 ;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-color: rgb(0, 0, 0);
-
+  color: rgb(0, 0, 0);
 }
 
 .form_produto{
   padding: 10px;
-  
   font-weight: bold;
 }
 
 .caixinha_form > option{
   font-weight: bolder;
-  
-
 }
-
 
 .caixinha_form{
   background-color: #f0bee3;
@@ -53,113 +50,103 @@ color: rgb(0, 0, 0);
   font-weight: bold;
 }
 
-    .resposta_caixinha{
-      border-radius: 5px;
-      border: 2px solid black;
-      box-shadow: 1px 1px 0ox;
-      width: 200px;
-      
+.resposta_caixinha{
+  border-radius: 5px;
+  border: 2px solid black;
+  box-shadow: 1px 1px 0px;
+  width: 200px;
+}
 
-    }
-  .button_pedido{
-    width: 120px;
-    height: auto;
-    padding: 2px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-   
-    
-    
-  }
+.button_pedido{
+  width: 120px;
+  height: auto;
+  padding: 2px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
 
-  .button_pedido:hover{
-background-color: aliceblue;
-color: rgb(91, 8, 97);
-transition: 0.2s ease-in-out;
-box-shadow: 3px 3px 3px;
-font-weight: bolder;
-cursor: pointer;
+.button_pedido:hover{
+  background-color: aliceblue;
+  color: rgb(91, 8, 97);
+  transition: 0.2s ease-in-out;
+  box-shadow: 3px 3px 3px;
+  font-weight: bolder;
+  cursor: pointer;
+}
 
+.button_limpar{
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+}
 
-  }
-  .button_limpar{
-    width: 80px;
-    height: auto;
-    border-radius: 8px;
-  }
+.button_limpar:hover{
+  background-color: aliceblue;
+  color: rgb(91, 8, 97);
+  transition: 0.2s ease-in-out;
+  box-shadow: 3px 3px 3px;
+  font-weight: bolder;
+  cursor: pointer;
+}
 
-  .button_limpar:hover{
-    background-color: aliceblue;
-color: rgb(91, 8, 97);
-transition: 0.2s ease-in-out;
-box-shadow: 3px 3px 3px;
-font-weight: bolder;
-cursor: pointer;
-  }
+/**Fim estilização do formulário**/
 
-  
+/**Início estilização de texto (parte de encomenda)**/
+.info_encomendas{
+  border-bottom: 3px solid #6b2035;
+  padding: 10px;
+}
 
-  /**Fim estilização do fórmulario**/
+.info_encomendas > h3{
+  font-size: 1.4em;
+  margin-bottom: 5px;
+}
 
-  /**Início estilização de texto(parte de encomenda**/
-  .info_encomendas{
-    border-bottom:3px solid #6b2035 ;
-    padding: 10px;
-    
+.info_envio_encomendas{
+  border-bottom: 3px solid rgb(107, 32, 53);
+  padding: 10px;
+}
 
-  }
-  .info_encomendas > h3{
-    font-size: 1.4em;
-    margin-bottom: 5px ;
-    
-    
-  }
-
-  .info_envio_encomendas{
-    border-bottom:3px solid rgb(107, 32, 53) ;
-    padding: 10px;
-  }
-
-  .info_encomendas {
-    background-color: #fac9fb; 
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px; 
-    margin: 0 auto ; 
+.info_encomendas {
+  background-color: #fac9fb; 
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px; 
+  margin: 0 auto; 
 }
 
 .info_encomendas h3 {
-    font-size: 22px;
-    color: #693611; 
-    text-align: center;
-    margin-bottom: 10px;
+  font-size: 22px;
+  color: #693611; 
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .info_encomendas p {
-    font-size: 16px;
-    color: #333;
-    text-align: center;
-    margin-bottom: 10px;
-    font-weight: bolder;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bolder;
 }
 
 .info_encomendas ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .info_encomendas li {
-    background-color: #ffe4c4; 
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 8px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-    font-weight: bolder;
+  background-color: #ffe4c4; 
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: bolder;
 }
-/**Est. Sistema de envio**/
 
+/**Est. Sistema de envio**/
 .info_envio_encomendas {
   background-color: #fac9fb; 
   border-radius: 10px;
@@ -184,7 +171,7 @@ cursor: pointer;
   font-weight: bolder;
 }
 
-.iinfo_envio_encomendas ul {
+.info_envio_encomendas ul {
   list-style: none;
   padding: 0;
 }
@@ -197,13 +184,60 @@ cursor: pointer;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   font-size: 16px;
   font-weight: bolder;
+
 }
 
+/**Responsividade*/
 
+@media (max-width: 1024px) {
+  .interface {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 
+  .form_encomenda {
+    width: 90%;
+    padding: 10px;
+  }
+}
 
-.info_envio_encomendas ul {
-list-style: none;
-padding: 0;
+@media (max-width: 768px) {
+  .fotos_grandes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form_encomenda {
+    width: 95%;
+    max-width: 400px;
+  }
+
+  .button_pedido {
+    width: 100%;
+  }
+
+  .button_limpar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .form_encomenda {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .button_pedido,
+  .button_limpar {
+    width: 100%;
+    font-size: 14px;
+  }
 }
