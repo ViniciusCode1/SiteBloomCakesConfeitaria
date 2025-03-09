@@ -23,12 +23,16 @@ font-size: 30px;
     font-size: 20px;
 }
 
-#agradecimento_email_foto img{
-    width: 500px;
+#agradecimento_email_foto a img{
+    max-width: 500px;
     height: auto;
     border-radius: 50px;
     margin-bottom: 50px;
 }
+#agradecimento_email_foto a{display: flex;
+    justify-content: center;
+}
+
 #agradecimento_email_foto {display: flex;
     justify-content: center;
     margin: 20px;
@@ -38,4 +42,14 @@ font-size: 30px;
     text-align: center;
     padding-top: 40px;
 }
+@media (max-width: 768px) {
+    #agradecimento_email_foto img {
+      width: 90%;
+      height: auto;}}
 
+
+
+        @media (max-width: 425px) {
+            #agradecimento_email_foto img {
+              width: 90%;
+              height: auto;}}
